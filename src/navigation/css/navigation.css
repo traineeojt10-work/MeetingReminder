@@ -1,0 +1,60 @@
+
+
+
+#nav_top {
+
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 80px;
+
+    background-color: #105272;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+#nav_top > #button_ui {
+    background-color: transparent;
+    
+    margin: 0;
+    padding: 0;
+
+    margin-right: 20px;
+
+    width: max-content;
+    height: max-content;
+
+
+
+}
+
+#button_ui > #lgn_btn {
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+
+    margin: 0;
+    padding: 10px;
+
+    border: none;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+
+    
+}
+
+#button_ui > #lgn_btn:hover {
+    background-color: white;
+    color: #105272;
+
+    cursor: pointer;
+}
+
