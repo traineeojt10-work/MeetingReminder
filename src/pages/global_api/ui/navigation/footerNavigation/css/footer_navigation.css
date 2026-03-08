@@ -1,0 +1,63 @@
+
+/* footer */
+footer#my_foot {
+  background-color: var(--etopbotnav-color);
+  width: 100vw;
+  max-width: 100vw;
+  height: 40px;
+
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+#my_foot > p {
+  color: var(--ewhite-color);
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#floating_icon {
+  width: 50px;
+  height: 50px;
+
+  background-color: var(--flicon-color);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+
+  border-radius: 50%;
+}
+
+#floating_icon a {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+#floating_icon a > img {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  border-radius: 50%;
+}

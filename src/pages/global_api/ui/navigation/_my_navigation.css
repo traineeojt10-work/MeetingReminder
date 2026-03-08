@@ -1,0 +1,21 @@
+@import url("./topNavigation/css/top_navigation.css");
+@import url("./topNavigation/css/message.css");
+@import url("./topNavigation/css/notification.css");
+@import url("./topNavigation/css/profile_summary.css");
+
+@import url("./leftNavigation/css/left_navigation.css");
+@import url("./footerNavigation/css/footer_navigation.css");
+
+/* all navigation */
+nav#navigation_top,
+nav#left_menu,
+#floating_icon,
+footer#my_foot {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+

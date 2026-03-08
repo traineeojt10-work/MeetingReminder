@@ -1,0 +1,488 @@
+/* notification dropdown */
+
+#button_container li > span#my_notif_icon_box {
+  cursor: pointer;
+  width: max-content;
+  height: auto;
+}
+
+#button_container li #my_notif_icon_box > img {
+  width: 30px;
+  height: 27px;
+
+  border-radius: 5px;
+}
+
+#button_container li #my_notif_icon_box > img:hover {
+  width: 30px;
+  height: 27px;
+
+  border-radius: 5px;
+  background-color: var(--edash-color);
+
+  
+}
+
+#mynotif_box {
+  /* background-color: var(--ewhite-color); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  /* border: 1px solid var(--etopbotnav-color); */
+  /* border-radius: 50px; */
+
+  width: 480px;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+
+  cursor: default;
+  
+}
+
+
+/* notification content list */
+#mynotif_box > #notif_content {
+  background-color: var(--ebody-color);
+  /* background-color: green; */
+  width: 100%;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+}
+
+#notif_content > #notif_list {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 300px;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#notif_list > li {
+  border: 1px solid var(--etopbotnav-color);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 100%;
+  height: max-content;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  cursor: pointer;
+}
+
+#notif_list > li:hover {
+  background-color: var(--edash-color);
+  
+}
+
+#notif_list li > div:nth-child(1) {
+  /* background-color: orange; */
+  width: 80px;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#notif_list li div:nth-child(1) > span {
+  /* background-color: orange; */
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: max-content;
+}
+
+#notif_list li div:nth-child(1) span > img {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 7px;
+}
+
+/* notif main content */
+#notif_list li > div:nth-child(2) {
+  /* background-color: green; */
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  margin-left: 1px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#notif_list li div:nth-child(2) > span {
+  /* background-color: orange; */
+  /* border: 1px solid orange; */
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  height: 100%;
+  width: 100%;
+}
+
+#notif_list li div:nth-child(2) span > h1#user_real_name {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--text-color2);
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+
+  position: relative;
+  left: 0;
+  max-width: 380px;
+
+  margin: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#notif_list li div:nth-child(2) span > #notif_main_paragraph {
+  color: var(--text-color);
+
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+
+  max-width: 380px;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#notif_list li div:nth-child(2) span > #notifquiz_main_paragraph {
+  color: var(--text-color);
+
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+
+  max-width: 380px;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#notif_list li div:nth-child(2) span > #notifact_main_paragraph {
+  color: var(--text-color);
+
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+
+  max-width: 380px;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#notif_list li div:nth-child(2) span > p#notif_date {
+  color: #808080;
+  font-size: 12px;
+
+  font-family: sans-serif;
+
+  max-width: 380px;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* check mark */
+#notif_list li div > div#notif_status {
+  /* background-color: red; */
+  width: 14px;
+  height: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  top: -25px;
+  left: -5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-size: 12px;
+  color: var(--ewhite-color);
+
+  border-radius: 5px;
+
+  cursor: default;
+}
+
+#notif_status > img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* header here */
+
+div#mynotif_box > div#notif_header {
+  background-color: var(--etopbotnav-color);
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#notif_header > ul:nth-child(1) {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+#notif_header ul:nth-child(1) > li {
+  /* background-color: orange; */
+  list-style: none;
+  position: relative;
+  left: 10px;
+
+  height: 100%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+#notif_header ul:nth-child(1) li > h1 {
+  color: var(--ewhite-color);
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  font-size: 16px;
+}
+
+/* dropdown button */
+#notif_header ul:nth-child(2) {
+  /* background-color: green; */
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#notif_header ul:nth-child(2) > li {
+  position: relative;
+  left: -10px;
+
+  list-style: none;
+
+  height: 100%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+button#dropdown_notif_btn {
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  width: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+button#dropdown_notif_btn:hover {
+  background-color: var(--eleftnave-color);
+  border-radius: 7px;
+}
+
+button#dropdown_notif_btn > img#notif_dropdown_image {
+  width: 10px;
+  height: 20px;
+}
+
+img#notif_dropdown_image:hover {
+  background-color: var(--eleftnave-color);
+  border-radius: 7px;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+}
+
+/* dropdown content */
+#elipsis_notif_content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+
+  background-color: var(--ewhite-color);
+  width: 80px;
+  height: 40px;
+
+  border-radius: 5px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  z-index: 20;
+}
+
+#elipsis_notif_content > div {
+  /* border: 2px solid orange; */
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+#elipsis_notif_content div > a {
+    /* background-color: orange; */
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 12px;
+
+  position: relative;
+  left: 0;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#elipsis_notif_content div:hover {
+  background-color: var(--thead1-color);
+  color: var(--ewhite-color);
+  border-radius: 5px;
+}
+

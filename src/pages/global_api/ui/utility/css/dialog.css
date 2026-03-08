@@ -1,0 +1,445 @@
+/** if want to add custom dialog use [dialog_attribute_name] to style its children  */
+/** on the bottom of this css file  */
+
+.dialog {
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+
+  width: max-content;
+  height: max-content;
+
+  padding: 0;
+
+  margin: 0 auto;
+
+  margin-top: 20px;
+}
+
+.dialog > form {
+  /* background-color: green; */
+
+  width: max-content;
+  height: max-content;
+
+  border-radius: 10px;
+}
+
+div.dialog_container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--ewhite-color);
+
+  width: 300px;
+  height: max-content;
+
+  padding: 0;
+  margin: 0;
+
+  border-radius: 15px;
+}
+
+div.dialog_container > .top_design {
+  background-color: var(--text-color2);
+  width: 100%;
+  height: 40px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top_design > button {
+  background-color: var(--text-color2);
+  border: none;
+
+  width: 25px;
+  height: 25px;
+
+  position: relative;
+  right: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 5px;
+
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+
+  color: white;
+}
+
+.top_design > button:hover {
+  background-color: aliceblue;
+  color: var(--etopbotnav-color);
+  cursor: pointer;
+}
+
+/* header */
+div.dialog_container > .dialog_header {
+  /* background-color: green; */
+  width: 100%;
+  height: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.dialog_header > label {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  position: relative;
+  left: 20px;
+
+  padding: 0;
+  margin: 0;
+  padding-right: 24px;
+}
+
+div.dialog_header > h1 {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+
+  color: #2600ff;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* content */
+div.dialog_container > .dialog_content {
+  /* background-color: orange; */
+  width: 100%;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+div.dialog_content > textarea {
+  position: relative;
+  left: 20px;
+  resize: none;
+  width: calc(100% - 40px);
+  height: 100px;
+  border: none;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+  color: var(--etopbotnav-color);
+}
+div.dialog_content textarea:focus {
+  outline: none;
+  border: none;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > input[type="text"] {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > input[type="text"]:focus {
+  outline: none;
+}
+
+div.dialog_content > input[type="date"] {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+/* div.dialog_content > input[type="date"]:focus {
+  outline: none;
+} */
+
+div.dialog_content > input[type="time"] {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > select {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+div.dialog_content > #q_time {
+  width: 100%;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+  display: inline-block;
+}
+
+div.dialog_content #q_time > select#quiz_time_num_selection {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content #q_time > select#timer_unit_input {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+/* quiz */
+div.dialog_content #q_time > select#the_quiz_selection {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content #q_time > select#the_quiz_unit_input {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > span {
+  position: relative;
+  left: 20px;
+  height: max-content;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  /* border-bottom: 1px solid var(--etopbotnav-color); */
+}
+
+div.dialog_container > .dialog_footer {
+  /* background-color: green; */
+
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 5px;
+}
+
+.dialog_footer > input {
+  position: relative;
+  right: 20px;
+
+  background-color: var(--etopbotnav-color);
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: sans-serif;
+  font-size: 12px;
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.dialog_footer > button {
+  position: relative;
+  right: 20px;
+
+  background-color: var(--etopbotnav-color);
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: sans-serif;
+  font-size: 12px;
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+div.botom_design {
+  background-color: var(--text-color2);
+  width: 100%;
+  height: 20px;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+[notification_dialog] form .dialog_container {
+  width: 600px;
+  background-color: #d6e7f0;
+}
+
+[notification_dialog] .dialog_content > #notif_content {
+  background-color: white;
+
+  width: calc(100% - 30px);
+  height: 250px;
+
+  margin: 0;
+  padding: 10px;
+
+  margin-left: 15px;
+
+  border-radius: 10px;
+  border: 1px var(--etopbotnav-color) solid;
+
+  overflow-y: auto;
+}
+
+#notif_content > p {
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 200%;
+  text-align: left;
+  /* color: green; */
+}
+
+#notif_content > p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 200%;
+  text-align: left;
+  color: #808080;
+}
+
+
+
+
+[warning_dialog] form .dialog_container .dialog_content > #warning_content {
+  /* background-color: orange; */
+
+  max-width: 300px;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+}
+
+#warning_content > p {
+  /* background-color: green; */
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #687f8b;
+  word-break: break-all;
+
+  margin: 0;
+  padding: 0;
+
+  /* max-width: 300px; */
+  /* white-space: nowrap; */
+
+  position: relative;
+  left: 20px;
+  margin-right: 40px;
+
+
+  
+}
