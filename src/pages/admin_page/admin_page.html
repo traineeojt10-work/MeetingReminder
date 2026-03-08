@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./../../logo.png" type="image/x-icon" />
+  <title>Admin Page</title>
+
+  <link rel="stylesheet" href="./client/index.css" />
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <script type="module" src="./App.ts"></script>
+
+  <script type="module" src="./bootstrap.bundle.min.js"></script>
+  <script type="module" src="./jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <nav id="navigation_top">
+    <div class="" id="logo_container">
+      <h1>Meeting Reminder</h1>
+    </div>
+
+    <div class="" id="button_container">
+      <div class="button_content_container">
+
+
+
+        <button class="" id="message_icon_btn">
+          <img src="./images/message.webp" alt="message" />
+        </button>
+
+        <div class="" id="message_box">
+
+          <div class="" id="message_content_list">
+
+            <div id="message_data_c">
+
+              <div class="message_data" id="">
+                <div class="" id="profile_icon_c">
+                  <img src="./images/USR1.webp" alt="sender_profile">
+                </div>
+                <div class="" id="message_description_c">
+
+                  <div class="" id="message_author_c">
+                    <strong>Sender</strong>User Real Name
+                  </div>
+                  <div class="" id="message_data_paragh">
+                    You have a message with User Real Name at 12:00AM at February 12, 2026
+                    You have a message with User Real Name at 12:00AM at February 12, 2026
+                  </div>
+                  <div class="" id="message_content_status">
+                    message shown at 5:00PM on February 25, 2026
+                  </div>
+
+                </div>
+              </div>
+
+
+              
+
+
+            </div>
+
+
+            
+
+            
+
+
+
+          </div>
+
+          <div class="" id="message_box_header">
+
+            <div class="" id="messagebox_title">
+              <h1>Messages</h1>
+            </div>
+            <div class="" id="messagebox_button">
+              <div>See All</div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <button class="" id="notification_icon_btn">
+          <img src="./images/notification.webp" alt="notification" />
+        </button>
+
+        <div class="" id="notification_box">
+
+
+          <div class="" id="notif_content_list">
+
+            <div id="notif_data_c">
+
+              <div class="notif_data" id="">
+                <div class="" id="profile_icon_c">
+                  <img src="./images/USR1.webp" alt="sender_profile">
+                </div>
+
+                <div class="" id="notif_description_c">
+
+                  <div class="" id="notif_data_paragh">
+                    You have a message with User Real Name at 12:00AM at February 12, 2026
+                    You have a message with User Real Name at 12:00AM at February 12, 2026
+                  </div>
+                  <div class="" id="notif_content_status">
+                    notification shown at 5:00PM on February 25, 2026
+                  </div>
+
+                </div>
+
+
+              </div>
+
+
+
+
+              
+
+
+            </div>
+            
+          </div>
+
+
+
+
+          <div class="" id="notif_header">
+
+            <div class="" id="notif_title">
+              <h1>Notification</h1>
+            </div>
+            <div class="" id="notifbox_button">
+              <div>See All</div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <button class="" id="user_icon_btn">
+          <img src="./images/USR1.webp" alt="user" />
+        </button>
+
+        <div class="" id="profile_box">
+          <div class="" id="role_label">Admin</div>
+          <div class="" id="logout_btn">Logout</div>
+        </div>
+
+        <p>User Real Name</p>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <main id="main_container">
+    
+    <nav id="left_menu">
+      
+      <div id="left_menu_container">
+
+        <div class="" id="home_icon_c">
+          <img src="./images/HomeLight.webp" alt="Home" />
+        </div>
+
+      </div>
+
+    </nav>
+    
+    <div id="route_admin">
+      
+      
+      <div class="" id="admin_container">
+
+        <div class="" id="admin_data_c">
+
+          <div id="admin_header" class="">
+            <div class="" id="header_title">
+              <h1>Admin</h1>
+            </div>
+
+            <div class="" id="header_button_c">
+              
+            </div>
+          </div>
+
+          <div id="admin_content" class="">
+
+            
+            <div class="" id="admin_content_data">
+
+              <div class="" id="mytable_container">
+
+                <div id="table_header">
+                  <div class="" id="search_box_c">
+                    <input 
+                    type="text" 
+                    name="" 
+                    id="" 
+                    value="" />
+
+                    <button id="search_btn">
+                      <img src="./images/search_white_transparent.webp" alt="search user">
+                    </button>
+                  </div>
+
+                </div>
+
+                
+                <div id="table_data_c">
+                  <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th>First Name</th>
+                        <th>Middle Name</th>
+                        <th>Last Name</th>
+                        <th>Role</th>
+                        <th>Department</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button id="create_btn">Create</button>
+                          <button id="read_btn">Read</button>
+                          <button id="update_btn">Update</button>
+                          <button id="delete_btn">Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>User</td>
+                        <td>Real</td>
+                        <td>Name</td>
+                        <td>Employee</td>
+                        <td>City Treasurer Office</td>
+                        <td>
+                          <button>Create</button>
+                          <button>Read</button>
+                          <button>Update</button>
+                          <button>Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+
+                  </table>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+        
+
+      </div>
+
+      
+
+        
+
+      
+      
+      
+    </div> 
+
+
+
+
+
+  </main>
+
+
+  <dialog class="dialog" id="create_dialog">
+    <form action="" method="post" id="create_form">
+
+      <div class="dialog_container" id="create_container">
+        <div class="top_design">
+          
+          <button class="dialog_close_btn">X</button>
+        </div>
+
+        <div id="create_box" class="dialog_the_square">
+
+          <div id="create_data_container">
+
+            <div id="create_data_header">
+              <div>
+                <h1>Create Record</h1>
+              </div>
+            </div>
+
+
+            <div id="data_box_create">
+
+
+              <div id="record_container">
+
+                
+
+
+
+
+
+
+                  
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>First Name:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="text" 
+                    name="fname" 
+                    id="fname_input" 
+                    placeholder="Enter first name"
+                    value="" />
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Middle Name:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="text" 
+                    name="mname" 
+                    id="mname_input" 
+                    placeholder="Enter middle name"
+                    value="" />
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Last Name:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="text" 
+                    name="lname" 
+                    id="lname_input" 
+                    placeholder="Enter last name"
+                    value="" />
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Birthday:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="date" 
+                    name="user_birthday" 
+                    id="" />
+                    
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Gender:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <select name="gender" id="selection_gender">
+                      <option value="">Select a gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Role:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <select name="gender" id="selection_role">
+                      <option value="">Select a role</option>
+                      <option value="Male">Department Head</option>
+                      <option value="Female">Employee</option>
+                      <option value="Female">Staff</option>
+                      <option value="Female">Officer</option>
+
+
+                    </select>
+
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Department:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <select name="gender" id="selection_department">
+                      <option value="">Select a department</option>
+                      <option value="Male">City Treasurer Office</option>
+                      <option value="Female">Civil Service</option>
+                    </select>
+
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <!-- <h6>Submit:</h6> -->
+                  </div>
+
+                  <div id="submit_box_c">
+                    <input 
+                    type="submit"
+                    id="add_user_btn"
+                    class="submit_btn"
+                    value="Create" />
+                  </div>
+                </div>
+                
+
+
+
+
+
+
+
+              </div>
+
+              
+
+            </div>
+
+
+
+          </div>
+
+
+          
+        </div>
+
+        <div class="bottom_design"></div>
+
+      </div>
+
+
+
+    </form>
+  </dialog>
+
+  <dialog class="dialog" id="update_dialog">
+    <form action="" method="post" id="create_form">
+
+      <div class="dialog_container" id="create_container">
+        <div class="top_design">
+          
+          <button class="dialog_close_btn">X</button>
+        </div>
+
+        <div id="create_box" class="dialog_the_square">
+
+          <div id="create_data_container">
+
+            <div id="create_data_header">
+              <div>
+                <h1>Update Record</h1>
+              </div>
+            </div>
+
+
+            <div id="data_box_create">
+
+
+              <div id="record_container">
+                  
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>First Name:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="text" 
+                    name="fname" 
+                    id="fname_input" 
+                    placeholder="Enter first name"
+                    value="" />
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Middle Name:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="text" 
+                    name="mname" 
+                    id="mname_input" 
+                    placeholder="Enter middle name"
+                    value="" />
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Last Name:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="text" 
+                    name="lname" 
+                    id="lname_input" 
+                    placeholder="Enter last name"
+                    value="" />
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Birthday:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <input 
+                    type="date" 
+                    name="user_birthday" 
+                    id="" />
+                    
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Gender:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <select name="gender" id="selection_gender">
+                      <option value="">Select a gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Role:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <select name="gender" id="selection_role">
+                      <option value="">Select a role</option>
+                      <option value="Male">Department Head</option>
+                      <option value="Female">Employee</option>
+                      <option value="Female">Staff</option>
+                      <option value="Female">Officer</option>
+
+
+                    </select>
+
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <h6>Department:</h6>
+                  </div>
+
+                  <div id="s_input_c">
+                    <select name="gender" id="selection_department">
+                      <option value="">Select a department</option>
+                      <option value="Male">City Treasurer Office</option>
+                      <option value="Female">Civil Service</option>
+                    </select>
+
+                  </div>
+                </div>
+
+                <div class="label_input_container" id="">
+
+                  <div id="s_label_c">
+                    <!-- <h6>Submit:</h6> -->
+                  </div>
+
+                  <div id="submit_box_c">
+                    <input 
+                    type="submit"
+                    id="update_user_btn"
+                    class="submit_btn"
+                    value="Update" />
+                  </div>
+                </div>
+                
+
+
+
+
+
+
+
+              </div>
+
+              
+
+            </div>
+
+
+
+          </div>
+
+
+          
+        </div>
+
+        <div class="bottom_design"></div>
+
+      </div>
+
+
+
+    </form>
+  </dialog>
+
+
+
+  <dialog class="dialog" id="read_dialog">
+    <form action="" method="post" id="create_form">
+
+      <div class="dialog_container" id="create_container">
+        <div class="top_design">
+          
+          <button class="dialog_close_btn">X</button>
+        </div>
+
+        <div id="create_box" class="dialog_the_square">
+
+          <div id="create_data_container">
+
+            <div id="create_data_header">
+              <div>
+                <h1>Read Record</h1>
+              </div>
+            </div>
+
+            <div id="profile_content" class="">
+              <div id="personal_info_c" class="">
+                <div class="" id="picture_c">
+                  
+                  <img
+                  src="./images/user_profile.webp"
+                  alt="user_profile_picture" />
+                  
+                  
+                </div>
+
+                <div class="" id="info_c">
+                  <div class="info_content" id="">
+                    <p><strong>Full Name:</strong> User Real Name</p>
+                  </div>
+                  <div class="info_content" id="">
+                    <p><strong>Gender:</strong> Male</p>
+                  </div>
+                  <div class="info_content" id="">
+                    <p><strong>Birthday:</strong> 02/09/2026</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="office_info_c" class="">
+                <div id="label_c">
+                  <p>Department</p>
+                </div>
+
+                <div class="" id="content_c">
+                  <p>City Treasurer Office</p>
+                </div>
+
+                <div id="label_c">
+                  <p>Position</p>
+                </div>
+                <div class="" id="content_c">
+                  <p>Head</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+          
+        </div>
+
+        <div class="bottom_design"></div>
+
+      </div>
+
+
+
+    </form>
+  </dialog>
+
+
+
+  <dialog class="dialog" id="delete_dialog">
+
+    <form action="" method="post" id="delete_form">
+
+      <div class="dialog_container" id="delete_dialog_conatiner">
+        <div class="top_design">
+          
+          <button class="dialog_close_btn">X</button>
+        </div>
+
+        <div id="create_box">
+
+          <div id="delete_data_container" >
+
+            <div id="create_data_header">
+              <div>
+                <h1>Delete Record</h1>
+              </div>
+            </div>
+
+
+            <div id="data_box_delete">
+              
+
+            
+
+              <div id="delete_data_c">
+                <p>Are you sure, you want to delete <span id="user_to_delete">User Real Name</span>?</p>
+                
+                
+
+              </div>
+
+              <div id="delete_submit_container">
+                <button id="yes_btn_delete">Yes</button>
+              </div>
+
+    
+
+              
+
+            </div>
+
+
+
+          </div>
+
+
+          
+        </div>
+
+        <div class="bottom_design"></div>
+
+      </div>
+
+
+
+    </form>
+
+  </dialog>
+
+
+
+  
+</body>
+</html>
