@@ -3,5 +3,5 @@ How to Run:
 2. open the prject on terminal and run the following.
 
 
-\n npm install@latest --for project dependency.
+npm install@latest --for project dependency.
 npm run dev -- debug
