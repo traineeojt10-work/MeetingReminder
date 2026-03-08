@@ -1,0 +1,148 @@
+@import url("./../../../global_api/ui/utility/css/app_dark.css");
+@import "./button.css";
+@import "./color-select.css";
+@import "./dialog.css";
+@import "./event-details.css";
+@import "./event-list.css";
+@import "./event.css";
+@import "./fab.css";
+@import "./form.css";
+@import "./input.css";
+@import "./mini-calendar.css";
+@import "./nav.css";
+@import "./month-calendar.css";
+@import "./scroll.css";
+@import "./select.css";
+@import "./sidebar.css";
+@import "./toaster.css";
+@import "./week-calendar.css";
+@import "./responsive.css";
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  background-color: var(--ebody-color);
+  scroll-behavior: smooth;
+
+  display: flex;
+  flex-direction: column;
+} */
+
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-2xl: 1.5rem;
+
+  --line-height-xs: 1rem;
+  --line-height-sm: 1.25rem;
+  --line-height-md: 1.5rem;
+  --line-height-lg: 1.75rem;
+  --line-height-2xl: 2rem;
+
+  --border-radius-md: 0.25rem;
+
+  --duration-sm: 100ms;
+  --duration-md: 300ms;
+  --duration-2xl: 3000ms;
+
+  --color-blue-50: #eff6ff;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+
+  --color-green-600: #16a34a;
+
+  --color-gray-100: #f3f4f6;
+  /* --color-gray-300: #d1d5db; */
+  --color-gray-300: #267298;
+
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+
+  /* border: 1px solid var(--etopbotnav-color); */
+
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-text-light: #f9fafb;
+  /* --color-text-dark: #030712; */
+  --color-text-dark: #267298;
+
+  --box-shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.app {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  box-sizing: border-box;
+
+  height: max-content;
+  /* max-width: 920px; */
+  width: calc(100% - 50px);
+
+  position:relative;
+  top: 0;
+
+  margin: 0;
+  padding: 0;
+  /* margin-left: 5px; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+
+
+  
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* max-width: 920px; */
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  
+}
+
+.calendar {
+  height: 100%;
+  width: 100%;
+  /* max-width: 920px; */
+  /* background-color: #eff6ff; */
+
+
+  margin: 0;
+  padding: 0;
+
+  /* min-height: 100vh; */
+}
+
+/* @media (min-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+} */
