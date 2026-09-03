@@ -1,0 +1,835 @@
+/** if want to add custom dialog use [dialog_attribute_name] to style its children  */
+/** on the bottom of this css file  */
+
+.dialog {
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+
+  width: max-content;
+  height: max-content;
+
+  padding: 0;
+
+  margin: 0 auto;
+
+  margin-top: 30px;
+
+}
+
+
+
+.dialog > form {
+  /* background-color: green; */
+
+  width: max-content;
+  height: max-content;
+
+  border-radius: 10px;
+}
+
+
+div#mydialog_container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--ewhite-color);
+  width: 100%;
+  height: max-content;
+  /* min-height: calc(100vh - 5vh); */
+  min-width: calc(100vw - 50vw);
+
+  padding: 0;
+  margin: 0;
+
+  border-radius: 15px;
+}
+
+div.dialog_container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--ewhite-color);
+  width: 100%;
+  height: max-content;
+  /* min-height: calc(100vh - 5vh); */
+  min-width: calc(100vw - 5vw);
+
+  padding: 0;
+  margin: 0;
+
+  border-radius: 15px;
+}
+
+div.dialog_container > .top_design {
+  background-color: var(--text-color2);
+  width: 100%;
+  height: 40px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top_design > button {
+  background-color: var(--text-color2);
+  border: none;
+
+  width: 25px;
+  height: 25px;
+
+  position: relative;
+  right: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 5px;
+
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+
+  color: white;
+}
+
+.top_design > button:hover {
+  background-color: aliceblue;
+  color: var(--etopbotnav-color);
+  cursor: pointer;
+}
+
+/* header */
+div.dialog_container > .dialog_header {
+  /* background-color: green; */
+  width: 100%;
+  height: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.dialog_header > label {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  position: relative;
+  left: 20px;
+
+  padding: 0;
+  margin: 0;
+  padding-right: 24px;
+}
+
+div.dialog_header > h1 {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+
+  color: #2600ff;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* content */
+div.dialog_container > .dialog_content {
+  /* background-color: orange; */
+  width: 100%;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+div.dialog_content > textarea {
+  position: relative;
+  left: 20px;
+  resize: none;
+  width: calc(100% - 40px);
+  height: 100px;
+  border: none;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+  color: var(--etopbotnav-color);
+}
+div.dialog_content textarea:focus {
+  outline: none;
+  border: none;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > input[type="text"] {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > input[type="text"]:focus {
+  outline: none;
+}
+
+div.dialog_content > input[type="date"] {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+/* div.dialog_content > input[type="date"]:focus {
+  outline: none;
+} */
+
+div.dialog_content > input[type="time"] {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > select {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+div.dialog_content > #q_time {
+  width: 100%;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+  display: inline-block;
+}
+
+div.dialog_content #q_time > select#quiz_time_num_selection {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content #q_time > select#timer_unit_input {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+/* quiz */
+div.dialog_content #q_time > select#the_quiz_selection {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content #q_time > select#the_quiz_unit_input {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: calc(100% - 180px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid var(--etopbotnav-color);
+}
+
+div.dialog_content > span {
+  position: relative;
+  left: 20px;
+  height: max-content;
+  width: calc(100% - 40px);
+
+  font-family: sans-serif;
+
+  border: none;
+
+  /* border-bottom: 1px solid var(--etopbotnav-color); */
+}
+
+div.dialog_container > .dialog_footer {
+  /* background-color: green; */
+
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 5px;
+}
+
+.dialog_footer > input {
+  position: relative;
+  right: 20px;
+
+  background-color: var(--etopbotnav-color);
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: sans-serif;
+  font-size: 12px;
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.dialog_footer > button {
+  position: relative;
+  right: 20px;
+
+  background-color: var(--etopbotnav-color);
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: sans-serif;
+  font-size: 12px;
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.bottom_design {
+  background-color: var(--text-color2);
+  width: 100%;
+  height: 20px;
+
+  margin: 0;
+  padding: 0;
+  /* margin-top: 10px; */
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+
+
+/* Create Container her */
+
+
+#mydialog_container > .dialog_the_square {
+  /* background-color: white; */
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  max-height: calc(100vh - 20vh);
+  min-height: calc(100vh - 20vh);
+
+  overflow-y: auto;
+
+  /* overflow: hidden; */
+
+
+}
+
+#create_data_container {
+  /* background-color: green; */
+
+  width: 100%;
+  max-height: calc(100vh - 20vh);
+  min-height: 100px;
+
+  margin: 0;
+  padding: 0;
+}
+
+#delete_data_container {
+  /* background-color: green; */
+
+  width: 100%;
+  max-height: calc(100vh - 80vh);
+  min-height: 100px;
+
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* #create_data_container > div {
+  border: 2px solid red;
+
+  width: 100%;
+  height: 100px;
+
+  margin: 0;
+  padding: 0;
+} */
+
+#create_data_header {
+  background-color: white;
+
+  width: 100%;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+  padding-top: 20px;
+  padding-bottom: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  
+}
+
+#create_data_header > div {
+  height: 100%;
+  width: calc(100% - 50px);
+  border-bottom: 2px solid black;
+}
+
+
+#create_data_header > h1 {
+  position: relative;
+  left: 20px;
+}
+
+
+#data_box_meeting {
+  /* background-color: red; */
+
+  width: calc(100% - 50px);
+  height: max-content;
+  /* min-height: calc(100vh - 20vh); */
+  /* max-height: calc(100vh - 20vh); */
+
+  
+
+  margin: 0;
+  padding: 0;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  /* overflow-y: auto; */
+  position: relative;
+  left: 25px;
+  top: 20px;
+
+
+
+
+}
+
+
+/* todo: chnage the height accordingly */
+#data_box_meeting > #meeting_description_c {
+  /* background-color: orange; */
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+#meeting_description_c > div {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+
+  /* border: 2px solid green; */
+}
+
+#meeting_description_c > #meeting_header {
+
+  background-color: white;
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: max-content;
+
+  border-bottom: 2px solid #105272;
+
+}
+
+
+
+
+/* #meeting_header > div {
+  border: 2px solid black;
+  width: 100%;
+  height: 30px;
+
+  margin: 0;
+  padding: 0;
+} */
+
+#meeting_header > #m_header_title {
+  height: 50px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+}
+
+#meeting_header > #m_header_title > h1 {
+  font-family: serif;
+  font-size: 28px;
+  font-weight: 300px;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--etopbotnav-color);
+
+  position: relative;
+  left: 20px;
+
+}
+
+#meeting_header > #m_header_from_c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  width: calc(100% - 20px);
+  height: 100%;
+
+  padding-top: 10px;
+  
+
+  /* padding-left: 20px; */
+}
+
+#m_header_from_c > h6 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+
+  width: max-content;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  
+
+  color: black;
+
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#m_header_from_c > p {
+
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  color: gray;
+
+  width: 100%;
+  height: 100%;
+
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+#meeting_header > #m_header_to_c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  width: calc(100% - 20px);
+  height: 100%;
+
+  /* padding-left: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#m_header_to_c > h6 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+
+  margin: 0;
+  padding: 0;
+
+  color: black;
+
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#m_header_to_c > p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  color: gray;
+
+  width: 100%;
+  height: 100%;
+
+
+  margin: 0;
+  padding: 0;
+}
+
+#meeting_description_c > #meeting_body {
+
+  /* background-color: rgb(216, 214, 214); */
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 300px;
+
+}
+
+#meeting_body > div {
+
+  width: 100%;
+  /* height: 100px; */
+  
+  margin: 0;
+  padding: 0;
+
+  /* border: 2px solid black; */
+
+
+
+
+}
+
+#meeting_body > #meet_description {
+
+  width: calc(100% - 10px);
+  height: max-content;
+  /* min-height: calc(100% - 25px); */
+
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+
+  margin-bottom: 50px;
+  margin-top: 10px;
+
+  padding-left: 20px;
+
+
+}
+
+#meeting_body > #meet_shown_c {
+
+  width: calc(100% - 10px);
+  height: max-content;
+  /* min-height: 100px; */
+
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+
+  color: gray;
+
+  padding-left: 20px;
+
+
+}
+
+/* alarm dialog */
+
+/* height here */
+#alarm_box {
+  /* background-color: white; */
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  /* max-height: calc(100vh - 20vh); */
+  min-height: calc(100vh - 80vh);
+
+  overflow-y: auto;
+
+  /* overflow: hidden; */
+}
+
+
+/* width here */
+
+#alarm_dialog {
+
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+
+  width: max-content;
+  height: max-content;
+  min-height: 100%;
+
+  padding: 0;
+
+  margin: 0 auto;
+
+  margin-top: 30px;
+
+}
+div#alarm_container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--ewhite-color);
+  width: 100%;
+  height: max-content;
+  /* min-height: calc(100vh - 5vh); */
+  min-width: calc(100vw - 50vw);
+  max-width: calc(100vw - 50vw);
+
+
+  padding: 0;
+  margin: 0;
+
+  border-radius: 15px;
+}
+
+#alarm_content {
+  /* background-color: green; */
+  color: rgb(97, 97, 97);
+  width: calc(100% - 50px);
+  height: max-content;
+  min-height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+
+  margin: 0;
+  padding: 20px;
+
+  text-align: center;
+}
+

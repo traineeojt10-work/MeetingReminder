@@ -1,0 +1,178 @@
+ /*
+ note import this to App.css
+ @import "./css/AppDark.css";  
+ */
+:root {
+  /* body */
+  --body-color: #DCF2E6;
+
+  /* nav top */
+  --nav-top: #1c8332;
+
+  /* aside */
+  --left-menu: #64C087;
+
+  /* aside icon */
+  --aside-bc: #D9D9D9;
+
+  /* footer */
+  --footer-bc: #54FF9E;
+
+  /* floating icon */
+  --fi-bc: #528B47;
+
+  --online-color: #3deb4f;
+
+  --esubject-side: #99C3D9;
+
+  --text-color: #000000;
+  --text-color2: #267298;
+  
+  --border-color: #267298;
+
+
+
+
+  
+
+  /* body color */
+  /* --ebody-color: #cbe1ec; */
+  --ebody-color: #cbddf3;
+
+
+
+  /* --ebody-color: #d6e7f0; */
+  /* --ebody-color: #cad0d4; */
+
+  
+  /* --edash-color: #cbe1ec; */
+  --edash-color: lightblue;
+
+
+  /* top nav */
+  --etopbotnav-color: #267298;
+  /* left nav */
+  --eleftnave-color: #6aacce;
+
+  /* font color */
+  --ewhite-color: #ffffff;
+
+  /* font color */
+  --eblack-color: #000000;
+
+  /* placeholder color */
+  --temp-color: #cad0d4;
+
+  /* table header */
+  --thead1-color: #b1c5cf;
+  --thead2-color: #687f8b;
+
+  /* progress color */
+  --progress-color: #1dde7d;
+
+  /* blue link */
+  --bluelink-color: #037adb;
+
+  /* floating icon */
+  --flicon-color: #43748d;
+
+  /* dropdown border */
+  --dropbor-color: #aa9e9e;
+  --dropbc-color: #f5f5f5;
+
+}
+
+.DarkMode {
+  /* body */
+  --ebody-color: rgb(31, 31, 31);
+  --text-color: #999fa6;
+  --text-color2: #355c6f;
+
+  --border-color: black;
+
+
+    /* top nav */
+  --etopbotnav-color: #121212;
+    /* left nav */
+  --eleftnave-color: #414141;
+
+  --thead1-color: #414141;
+  --thead2-color: #121212;
+
+  /* font color */
+  --ewhite-color: #a1abaf;
+
+  --edash-color: #2c3134;
+
+  --esubject-side: #283339;
+
+
+}
+
+.LightMode {
+  /* body */
+  --ebody-color: rgba(255, 255, 255, 0.975);
+  --text-color: #000000;
+  --text-color2: #267298;
+    /* top nav */
+  --etopbotnav-color: #267298;
+    /* left nav */
+  --eleftnave-color: #6aacce;
+
+  /* font color */
+  --ewhite-color: #ffffff;
+
+  --edash-color: #cbe1ec;
+
+  --esubject-side: #99C3D9;
+
+
+}
+
+.HighContrast {
+  /* body */
+  --ebody-color: yellow;
+  --text-color: #000000;
+  --text-color2: #267298;
+    /* top nav */
+  --etopbotnav-color: #267298;
+    /* left nav */
+  --eleftnave-color: #6aacce;
+
+  /* font color */
+  --ewhite-color: #ffffff;
+
+  --edash-color: #cbe1ec;
+
+  --esubject-side: #99C3D9;
+
+
+}
+
+.EyeComfort {
+  --ebody-color: rgb(191, 184, 133);
+  --text-color: #000000;
+  --text-color2: #267298;
+    /* top nav */
+  --etopbotnav-color: #267298;
+    /* left nav */
+  --eleftnave-color: #6aacce;
+
+  /* font color */
+  --ewhite-color: #ffffff;
+
+  --edash-color: #cbe1ec;
+
+  --esubject-side: #99C3D9;
+  
+}
+
+
+
+
+
+
+
+
+
+

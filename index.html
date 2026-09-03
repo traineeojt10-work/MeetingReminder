@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./src/logo.png" type="image/x-icon">
+
+    <title>Meeting Reminder Vanilla</title>
+
+    <link rel="stylesheet" href="./src/client/index.css" />
+    <script type="module" src="/src/App.ts" defer></script>
+  </head>
+
+  <body>
+
+    
+
+    <div id="app">
+      <nav id="nav_top">
+        <div id="button_ui">
+          <button id="lgn_btn">Login</button>
+        </div>
+      </nav>
+
+      <div id="image_carousel_container"></div>
+
+      <div id="login_box">
+        <div id="box_button_c">
+          <div id="top_design">
+            <button id="close_btn">X</button>
+          </div>
+
+          <button id="employee_button">Employee</button>
+          <button id="admin_button">Admin</button>
+
+          <div id="bottom_design">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dialog class="Toaster">
+      <div class="Data_Container">
+        <div class="toast_top_design">
+          <div class="toast_title">Sample</div>
+          <button class="close_toaster">
+            <img src="./src/images/toast_x_no_color.webp" alt="Exit Toaster" />
+          </button>
+        </div>
+
+        <div class="content_c">
+          <div class="data_content">Please enter a Valid Input.</div>
+        </div>
+
+        <div class="toast_bottom_design"></div>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="employee_login_dialog">
+      <form action="" method="post" id="employee_form">
+
+
+        <div class="dialog_container">
+
+          <div id="top_design">
+            <h1>Employee</h1>
+            <button id="close_btn">X</button>
+          </div>
+
+          <div class="input_div">
+            
+            <div id="icon_username">
+              <img src="./src/images/user_icon.webp" alt="username_icon" />
+            </div>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              class="dialog_input"
+              value=""
+              autofocus
+            />
+          </div>
+
+          
+          <div class="input_div">
+            <div id="icon_password">
+              <img src="./src/images/password.webp" alt="password_icon" />
+            </div>
+            <input
+              type="text"
+              name="passowrd"
+              placeholder="password"
+              class="dialog_input"
+              value=""
+            />
+          </div>
+
+          
+          <div id="submit_container">
+            <input id="submit_btn" type="submit" value="Login" />
+            <p>
+              <strong>not have an account?</strong> Register
+              <a href="#" id="signup_link">here</a>.
+            </p>
+          </div>
+
+
+        </div>
+
+
+
+      </form>
+    </dialog>
+
+    <dialog class="dialog" id="admin_login_dialog">
+      <form action="" method="post" id="admin_form">
+
+
+        <div class="dialog_container">
+
+          <div id="top_design">
+            <h1>Admin</h1>
+            <button id="close_btn">X</button>
+          </div>
+
+          <div class="input_div">
+            
+            <div id="icon_username">
+              <img src="./src/images/user_icon.webp" alt="username_icon" />
+            </div>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              class="dialog_input"
+              value=""
+              autofocus
+            />
+          </div>
+
+          
+          <div class="input_div">
+            <div id="icon_password">
+              <img src="./src/images/password.webp" alt="password_icon" />
+            </div>
+            <input
+              type="text"
+              name="password"
+              placeholder="password"
+              class="dialog_input"
+              value=""
+              autofocus
+            />
+          </div>
+
+          
+          <div id="submit_container">
+            <input id="submit_btn" type="submit" value="Login" />
+            <p>
+              <strong>not have an account?</strong> Register
+              <a href="#" id="signup_link">here</a>.
+            </p>
+          </div>
+
+
+        </div>
+
+
+
+      </form>
+    </dialog>
+
+
+    <dialog class="dialog" id="signup_dialog">
+      <form action="" method="post" id="signup_form">
+
+
+        <div class="dialog_container" id="signup_container">
+
+          <div id="top_design">
+            <h1>Signup</h1>
+            <button id="close_btn">X</button>
+          </div>
+
+          <div class="name_info_container">
+
+            <div class="ni_content_c" id="">
+              <h6 class="signup_label" id="">First Name</h6>
+
+            </div>
+
+            <div class="ni_content_c" id="">
+              <h6 class="signup_label" id="">Last Name</h6>
+
+            </div>
+            
+            <div class="ni_content_c" id="">
+              <h6 class="signup_label" id="">Middle Name (Optional)</h6>
+
+            </div>
+
+
+
+          </div>
+
+          <div class="name_info_container">
+
+            <div class="ni_content_c" id="">
+              <input 
+              type="text" 
+              class="sign_up_input"
+              placeholder="Enter first name"
+              value="" 
+              id="fname" />
+
+            </div>
+
+            <div class="ni_content_c" id="">
+              <input 
+              type="text" 
+              class="sign_up_input"
+              placeholder="Enter last name"
+              value=""
+              id="lname" />
+
+            </div>
+
+            <div class="ni_content_c" id="">
+              <input 
+              type="text" 
+              class="sign_up_input"
+              placeholder="Enter middle name"
+              value=""
+              id="mname" />
+
+            </div>
+
+            
+
+            <div class="dialog_header">
+              
+            </div>
+
+            
+
+
+
+
+          </div>
+
+
+
+          <div class="signup_label_row">
+
+            <div class="two_div_row">
+              <div>
+                <h6 class="signup_label">Gender</h6>
+              </div>
+
+              <div>
+                <input 
+                type="text" 
+                class="sign_up_input"
+                id="" 
+                placeholder="Enter gender"
+                value="" />
+              </div>
+
+            </div>
+
+            <div class="two_div_row">
+              <div>
+                <h6 class="signup_label">Age</h6>
+              </div>
+
+              <div>
+                <select name="" id="">
+                  <option value="">1</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="signup_label_row">
+
+            <div class="two_div_row">
+              <div>
+                <h6 class="signup_label">Department</h6>
+              </div>
+
+              <div>
+                <select name="" id="">
+                  <option value="">City Treasurer Office Department</option>
+                  <option value="">Civil Service Department</option>
+                  <option value="">HR Department</option>
+
+
+                </select>
+              </div>
+
+            </div>
+
+            <div class="two_div_row">
+              <div>
+                <h6 class="signup_label">Role</h6>
+              </div>
+
+              <div>
+                <select name="" id="">
+                  <option value="">Head</option>
+                  <option value="">Supervisor</option>
+                  <option value="">Staff</option>
+
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+
+          
+
+          
+
+
+          <div id="submit_signup_c">
+            <input id="submit_btn" type="submit" value="Signup" />
+          </div>
+
+          <div class="bottom_design"></div>
+
+
+        </div>
+
+
+
+      </form>
+    </dialog>
+
+
+
+
+
+    
+
+
+    
+  </body>
+</html>

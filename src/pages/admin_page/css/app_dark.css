@@ -1,0 +1,33 @@
+
+
+:root {
+
+    --body-color: #ECEBE1;
+    --nav-color: #105272;
+
+    --left--navcolor: #14719F;
+    --footer-color: #14719f;
+
+    --paragraph-color: #252525;
+    --title-color: #000000;
+
+
+
+}
+
+
+.light_mode {
+
+}
+
+.dark_mode {
+    
+}
+
+.high_contrast_mode {
+    
+}
+
+.eye_comfort_mode {
+    
+}

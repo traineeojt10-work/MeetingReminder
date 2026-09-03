@@ -1,0 +1,137 @@
+/*
+ note import this to App.css
+ @import "./css/AppDark.css";  
+ */
+:root {
+  /* body */
+  --body-color: #dcf2e6;
+
+  /* nav top */
+  --nav-top: #1c8332;
+
+  /* aside */
+  --left-menu: #64c087;
+
+  /* aside icon */
+  --aside-bc: #d9d9d9;
+
+  /* footer */
+  --footer-bc: #54ff9e;
+
+  /* floating icon */
+  --fi-bc: #528b47;
+
+  /* online color */
+  --online-color: #3deb4f;
+
+  /* body color */
+  --ebody-color: #d6e7f0;
+
+  --edash-color: #cbe1ec;
+
+  /* subject sidanav  */
+  --esubject-side: #99C3D9;
+
+  /* top nav */
+  --etopbotnav-color: #267298;
+  /* left nav */
+  --eleftnave-color: #6aacce;
+
+  /* font color */
+  --ewhite-color: #ffffff;
+
+  /* font color */
+  --eblack-color: #000000;
+
+  /* placeholder color */
+  --temp-color: #cad0d4;
+
+  /* table header */
+  --thead1-color: #b1c5cf;
+  --thead2-color: #687f8b;
+
+  /* progress color */
+  --progress-color: #1dde7d;
+
+  /* blue link */
+  --bluelink-color: #037adb;
+
+  /* floating icon */
+  --flicon-color: #43748d;
+
+  /* dropdown border */
+  --dropbor-color: #aa9e9e;
+  --dropbc-color: #f5f5f5;
+
+  --gradient-color: #164d6b;
+  --gradient-background: linear-gradient(
+    0deg,
+    rgba(22, 77, 107, 1) 0%,
+    rgba(31, 100, 135, 1) 41%,
+    rgba(41, 128, 171, 1) 67%,
+    rgba(57, 170, 227, 1) 99%
+  );
+  
+}
+
+
+.DarkMode {
+  /* body */
+  --ebody-color: rgb(31, 31, 31);
+
+}
+
+.LightMode {
+  /* body */
+  --ebody-color: white;
+
+}
+
+.HighContrast {
+  /* body */
+  --ebody-color: yellow;
+
+}
+
+.EyeComfort {
+  --ebody-color: rgb(191, 184, 133);
+}
+
+
+.dashboard {
+  /* body color */
+  --ebody-color: #d6e7f0;
+
+  --edash-color: #cbe1ec;
+
+  /* top nav */
+  --etopbotnav-color: #267298;
+  /* left nav */
+  --eleftnave-color: #6aacce;
+
+  /* font color */
+  --ewhite-color: #ffffff;
+
+  /* font color */
+  --eblack-color: #000000;
+
+  /* placeholder color */
+  --temp-color: #cad0d4;
+
+  /* table header */
+  --thead1-color: #b1c5cf;
+  --thead2-color: #687f8b;
+
+  /* progress color */
+  --progress-color: #1dde7d;
+
+  /* blue link */
+  --bluelink-color: #037adb;
+
+  /* floating icon */
+  --flicon-color: #43748d;
+
+  /* dropdown border */
+  --dropbor-color: #aa9e9e;
+  --dropbc-color: #f5f5f5;
+}
